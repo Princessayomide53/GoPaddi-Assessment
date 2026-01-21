@@ -37,7 +37,7 @@ const Banner = () => {
     3: 'bg-[#0D6EFD]',
   };
   return (
-    <section className='bg-white h-full p-7'>
+    <section className='p-7'>
       <figure className='w-full'>
         <Image
           src={banner}
@@ -116,6 +116,16 @@ const Banner = () => {
           </li>
         ))}
       </ul>
+
+      <div className='pt-20'>
+        <h2 className='text-[#1D2433] font-semibold text-xl leading-7 tracking-[-2%]'>
+          Trip itineraries
+        </h2>
+
+        <p className='text-[#647995] font-medium leading-5 text-sm tracking-[-1%]'>
+          Your trip itineraries are placed here
+        </p>
+      </div>
     </section>
   );
 };
