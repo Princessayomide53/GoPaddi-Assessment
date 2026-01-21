@@ -68,8 +68,8 @@ const Nav = () => {
               </li>
             ))}
             <li className='flex gap-3'>
-              <Image src={Profile} alt='profile' className='w-10 h-10' />
-              <Image src={CaretDown} alt='arrow-down' className='w-5 h-5' />
+              <Image src={Profile} alt='profile' className='w-12 h-12' />
+              <Image src={CaretDown} alt='arrow-down' className='w-5 h-5 -mt' />
             </li>
           </ul>
         </nav>

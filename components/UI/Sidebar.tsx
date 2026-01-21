@@ -21,9 +21,9 @@ const Sidebar = () => {
     { id: 8, img: Package, text: 'Vacational Packages' },
   ];
   return (
-    <section className='bg-white rounded-sm w-75 h-screen py-8 px-10'>
+    <section className='bg-white rounded-sm w-75 h-screen py-8 pl-10'>
       {Sidebars.map((bars) => (
-        <div className='flex space-x-5 space-y-7' key={bars.id}>
+        <div className='flex space-x-3.5 space-y-7' key={bars.id}>
           <Image src={bars.img} alt='bars.text' />
           <p className='font-medium text-base leading-6 tracking-[-1px] text-[#647995]'>
             {bars.text}
