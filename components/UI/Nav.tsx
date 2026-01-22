@@ -34,7 +34,7 @@ const Nav = () => {
           <input
             type='text'
             placeholder='search'
-            className='xs:w-[6rem] iphone:w-[10rem] lg:w-[25rem] xl:w-[20rem] h-[3.5rem] pl-3 bg-[#F0F2F5] rounded-sm'
+            className='iphone:w-[10rem] lg:w-[25rem] xl:w-[20rem] h-[3.5rem] pl-3 bg-[#F0F2F5] rounded-sm'
           />
         </div>
         <nav className='flex  xl:space-x-4.5 mac:space-x-6'>
