@@ -7,13 +7,6 @@
   --breakpoint-sm: 425px;
   --breakpoint-14: 430px;
   --breakpoint-mac: 1440px;
-  --breakpoint-2xl: 2560px;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-poppins);
 }
 
 /* :root {

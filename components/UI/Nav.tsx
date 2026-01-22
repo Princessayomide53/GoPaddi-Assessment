@@ -28,22 +28,22 @@ const Nav = () => {
   ];
   return (
     <header className='bg-white py-7 w-full'>
-      <div className='w-full mac:max-w-[88rem] mx-auto flex justify-between items-center'>
+      <div className='w-full px-3 md:px-0 md:max-w-[45rem] lg:max-w-[62rem] xl:max-w-[76rem] mac:!max-w-[88rem] mx-auto flex justify-between items-center'>
         <div className='flex gap-7'>
           <Image src={Logo} alt='logo' />
           <input
             type='text'
             placeholder='search'
-            className='mac:w-[20rem] h-[3.5rem] pl-3 bg-[#F0F2F5] rounded-sm'
+            className='lg:w-[25rem] xl:w-[20rem] h-[3.5rem] pl-3 bg-[#F0F2F5] rounded-sm'
           />
         </div>
-        <nav className='flex space-x-6'>
-          <ul className='flex space-x-4.5'>
+        <nav className='flex  xl:space-x-4.5 mac:space-x-6'>
+          <ul className='xl:flex hidden xl:space-x-3.5 mac:space-x-4.5'>
             {mainNavItems.map((item) => (
               <li key={item.id} className='flex-col flex items-center'>
                 <Image src={item.img} alt={item.text} className='w-7 h-7' />
                 <p
-                  className={`text-base leading-6 ${
+                  className={`lg:text-xs xl:text-sm mac:text-base leading-6 ${
                     item.id === 4
                       ? 'text-[#1D2433] font-bold'
                       : 'text-[#647995] font-medium'
@@ -56,20 +56,27 @@ const Nav = () => {
             <div className='border-r border-2 border-[#98A2B3]'></div>
           </ul>
           <ul className='flex space-x-6'>
-            <Button className='bg-[#0D6EFD] rounded-sm font-medium text-base px-3.5 self-center py-2.5 text-white'>
+            <Button className='bg-[#0D6EFD] hidden xl:flex rounded-sm font-medium lg:text-xs xl:text-sm mac:text-base px-3.5 self-center py-2.5 text-white'>
               Subscribe
             </Button>
             {utilityNavItems.map((items) => (
-              <li key={items.id} className='flex-col flex items-center'>
+              <li
+                key={items.id}
+                className='hidden flex-col xl:flex items-center'
+              >
                 <Image src={items.img} alt={items.text} className='w-7 h-7' />
-                <p className='text-base leading-6 text-[#647995] font-medium'>
+                <p className='lg:text-xs xl:text-sm mac:text-base leading-6 text-[#647995] font-medium'>
                   {items.text}
                 </p>
               </li>
             ))}
             <li className='flex gap-3'>
               <Image src={Profile} alt='profile' className='w-12 h-12' />
-              <Image src={CaretDown} alt='arrow-down' className='w-5 h-5 -mt' />
+              <Image
+                src={CaretDown}
+                alt='arrow-down'
+                className='w-5 h-5 mt-4'
+              />
             </li>
           </ul>
         </nav>
