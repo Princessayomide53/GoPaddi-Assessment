@@ -71,14 +71,14 @@ const Banner = () => {
             </span>
           </time>
 
-          <aside className='md:hidden flex items-center gap-5 pt-5'>
+          <aside className='flex md:hidden lg:hidden items-center gap-5 pt-5'>
             <menu className='flex gap-5 items-center'>
-              <button
+              <Button
                 className='bg-[#E7F0FF] w-[5rem] h-[2.875rem] flex justify-center items-center hover:opacity-90 transition-opacity'
                 aria-label='User profile'
               >
                 <Image src={User} alt='' />
-              </button>
+              </Button>
               <div className='flex justify-center pt-0.5' aria-hidden='true'>
                 <Image src={box} alt='' />
                 <Image src={xx} alt='' />
