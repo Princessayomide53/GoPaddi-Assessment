@@ -29,12 +29,12 @@ const Nav = () => {
   return (
     <header className='bg-white py-7 w-full'>
       <div className='w-full px-3 md:px-0 md:max-w-[45rem] lg:max-w-[62rem] xl:max-w-[76rem] mac:!max-w-[88rem] mx-auto flex justify-between items-center'>
-        <div className='flex gap-7'>
+        <div className='flex gap-3 md:gap-7'>
           <Image src={Logo} alt='logo' />
           <input
             type='text'
             placeholder='search'
-            className='lg:w-[25rem] xl:w-[20rem] h-[3.5rem] pl-3 bg-[#F0F2F5] rounded-sm'
+            className='w-[10rem] lg:w-[25rem] xl:w-[20rem] h-[3.5rem] pl-3 bg-[#F0F2F5] rounded-sm'
           />
         </div>
         <nav className='flex  xl:space-x-4.5 mac:space-x-6'>
