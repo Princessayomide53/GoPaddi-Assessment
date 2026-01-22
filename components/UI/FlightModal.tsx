@@ -16,7 +16,6 @@ const FlightSearchModal = ({ open, onClose, onAddFlight }: Props) => {
 
   if (!open) return null;
 
-  // Mock search results that match your UI requirements
   const mockResults = [
     {
       id: Date.now(),
