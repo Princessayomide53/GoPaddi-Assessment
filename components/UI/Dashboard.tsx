@@ -27,10 +27,6 @@ const Dashboard = () => {
   ];
   return (
     <section className='bg-[#F0F2F5] w-full h-full lg:h-[43.3rem] xl:h-screen overflow-y-hidden'>
-      <div className='lg:hidden px-4'>
-        <BiMenu className='text-5xl cursor-pointer' />
-      </div>
-
       <div className='px-3 md:px-0 md:max-w-[45rem] lg:max-w-[62rem] xl:max-w-[76rem] mac:!max-w-[88rem] mx-auto py-7 flex gap-12 justify-between h-full '>
         <Sidebar />
         <MainContent />
