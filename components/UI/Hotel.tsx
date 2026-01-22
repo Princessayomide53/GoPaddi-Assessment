@@ -27,7 +27,6 @@ const Hotel = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // 1. Fetch from LocalStorage
   useEffect(() => {
     const saved = localStorage.getItem('trip_hotels');
     if (saved) {
@@ -36,7 +35,6 @@ const Hotel = () => {
     setIsLoading(false);
   }, []);
 
-  // 2. Save to LocalStorage
   useEffect(() => {
     if (!isLoading) {
       localStorage.setItem('trip_hotels', JSON.stringify(hotels));

@@ -57,7 +57,9 @@ const Sidebar = () => {
       </section>
 
       <>
-        <BiMenu className='text-3xl cursor-pointer' onClick={toggleSidebar} />
+        <div className='lg:hidden p-4'>
+          <BiMenu className='text-3xl cursor-pointer' onClick={toggleSidebar} />
+        </div>
 
         {isOpen && (
           <div
